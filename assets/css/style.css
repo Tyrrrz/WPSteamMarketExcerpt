@@ -1,23 +1,23 @@
 /* The most outer div which encapsulates all of the excerpt */
 div.steam-market-excerpt {
-    vertical-align: top;
-    display: inline-flex;
-    flex-direction: column;
+	vertical-align: top;
+	display: inline-flex;
+	flex-direction: column;
 
-    width: 260px;
-    min-height: 390px;
-    margin: 1px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+	width: 260px;
+	min-height: 390px;
+	margin: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
-    text-align: center;
+	text-align: center;
 
-    color: #fff;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #394f22;
-    border-radius: 8px;
-    background-color: #23282d;
+	color: #fff;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #394f22;
+	border-radius: 8px;
+	background-color: #23282d;
 }
 
 /* Script runtime errors are printed inside this div */
@@ -32,7 +32,7 @@ div.steam-market-excerpt-name {
 a.steam-market-excerpt-name {
 	font-size: 1.3em;
 
-    color: #fff;
+	color: #fff;
 }
 
 /* Item image div */
