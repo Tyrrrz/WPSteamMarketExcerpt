@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Steam Market Excerpt
-Plugin URI:  http://www.tyrrrz.me/projects/wpsme.php
+Plugin URI:  https://github.com/Tyrrrz/WPSteamMarketExcerpt
 Description: This plugin is used to make excerpts of Steam Market item listings
 Version:     1.2
 Author:      Alexey Golub
