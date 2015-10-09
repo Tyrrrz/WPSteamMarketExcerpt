@@ -1,0 +1,77 @@
+/* The most outer div which encapsulates all of the excerpt */
+div.steam-market-excerpt {
+    vertical-align: top;
+    display: inline-flex;
+    flex-direction: column;
+
+    width: 260px;
+    min-height: 390px;
+    margin: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    text-align: center;
+
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #394f22;
+    border-radius: 8px;
+    background-color: #23282d;
+}
+
+/* Script runtime errors are printed inside this div */
+div.steam-market-excerpt-error {
+}
+
+/* Item name div */
+div.steam-market-excerpt-name {
+}
+
+/* Item name link */
+a.steam-market-excerpt-name {
+	font-size: 1.3em;
+
+    color: #fff;
+}
+
+/* Item image div */
+div.steam-market-excerpt-image {
+	margin: 5px;
+}
+
+/* Item image img */
+img.steam-market-excerpt-image {
+}
+
+/* Embeds price and volume */
+div.steam-market-excerpt-fields {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: flex-end;
+
+	font-size: .9em;
+
+    text-align: center;    
+}
+
+/* Item lowest price div */
+div.steam-market-excerpt-lowestprice {
+}
+
+/* Item median price div */
+div.steam-market-excerpt-medianprice {
+}
+
+/* Item volume div */
+div.steam-market-excerpt-volume {
+}
+
+/*
+If you want to hide any of the fields use "display:none" on it.
+In case you want to not show the image, it's suggested to use the
+	shortcode's "showimage" parameter set to "false" instead of altering the CSS,
+	because this way the image won't be even downloaded.
+	[steam_market_excerpt game="730" name="AK-47 | Elite Build (Factory New)" showimage="false"]
+*/
