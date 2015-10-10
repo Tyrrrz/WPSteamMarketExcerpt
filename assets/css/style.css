@@ -1,3 +1,7 @@
+/* Script runtime errors are printed inside this div */
+div.steam-market-excerpt-error {
+}
+
 /* The most outer div which encapsulates all of the excerpt */
 div.steam-market-excerpt {
 	vertical-align: top;
@@ -18,10 +22,6 @@ div.steam-market-excerpt {
 	border-color: #394f22;
 	border-radius: 8px;
 	background-color: #23282d;
-}
-
-/* Script runtime errors are printed inside this div */
-div.steam-market-excerpt-error {
 }
 
 /* Item name div */
