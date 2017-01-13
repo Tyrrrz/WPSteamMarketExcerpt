@@ -11,33 +11,49 @@ div.steam-market-excerpt {
 	width: 260px;
 	min-height: 390px;
 	margin: 1px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 
 	text-align: center;
 
-	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: #2B2C2C;
 	border-width: 2px;
 	border-style: solid;
 	border-color: #394f22;
 	border-radius: 8px;
-	background-color: #23282d;
 }
 
 /* Item name div */
 div.steam-market-excerpt-name {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	padding: 5px;
+
+	color: #fffffa;
+	background-color: #343838;
+	border: 0 0 0 1px solid rgba(0, 0, 0, 0.18);
 }
 
 /* Item name link */
 a.steam-market-excerpt-name {
-	font-size: 1.3em;
+	font-size: 1.1em;
 
 	color: #fff;
 }
 
+a.steam-market-excerpt-name:hover {
+	color: #f9a825;
+}
+
 /* Item image div */
 div.steam-market-excerpt-image {
-	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+
+	padding: 5px;
 }
 
 /* Item image img */
@@ -48,12 +64,16 @@ img.steam-market-excerpt-image {
 div.steam-market-excerpt-fields {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 	justify-content: flex-end;
+
+	padding: 5px;
 
 	font-size: .9em;
 
 	text-align: center;    
+
+	background-color: #343838;
+	border: 0 1px 0 0 solid rgba(0, 0, 0, 0.18);
 }
 
 /* Item lowest price div */
@@ -70,8 +90,8 @@ div.steam-market-excerpt-volume {
 
 /*
 If you want to hide any of the fields use "display:none" on it.
-In case you want to not show the image, it's suggested to use the
+In case you want to not show the image, then it's more efficient to use the
 	shortcode's "showimage" parameter set to "false" instead of altering the CSS,
-	because this way the image won't be even downloaded.
+	because this way the image won't even be downloaded.
 	[steam_market_excerpt game="730" name="AK-47 | Elite Build (Factory New)" showimage="false"]
 */
