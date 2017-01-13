@@ -3,7 +3,7 @@
 Plugin Name: Steam Market Excerpt
 Plugin URI:  https://github.com/Tyrrrz/WPSteamMarketExcerpt
 Description: This plugin is used to make excerpts of Steam Market item listings
-Version:     1.3
+Version:     1.3.1
 Author:      Alexey Golub
 Author URI:  http://www.tyrrrz.me
 License:     GPL2
@@ -138,6 +138,7 @@ function steam_market_excerpt_shortcode($atts) {
 		$imgurl = get_image($game, $name, $imgwidth, $imgheight);
 
 	// Output result
+	$market_page_url = 'http://steamcommunity.com/market/listings/'.$game.'/'.rawurlencode($name);
 	$output = '';
 	$output .= '<div class="steam-market-excerpt">';
 	$output .= '<div class="steam-market-excerpt-name"><a class="steam-market-excerpt-name" target="_blank" href="'.esc_attr($market_page_url).'">'.$displayname.'</a></div>';
