@@ -37,4 +37,4 @@ It's really easy to change how each part of the excerpt looks. To do that, you n
 
 **Screenshots**
 
-![](http://tyrrrz.me/projects/images/wpsme_1.jpg)
+![](http://tyrrrz.me/projects/images/wpsme_1.png)
