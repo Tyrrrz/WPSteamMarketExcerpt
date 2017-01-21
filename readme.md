@@ -17,19 +17,21 @@ Copy the contents of the .zip file to /your_wp_blog_ftp_location/wp-content/plug
 This plugin is utilized via its own shortcode.
 
 The minimal format for the shortcode looks like this:
+```php
 [steam_market_excerpt game="730" name="AK-47 | Elite Build (Factory New)"]
-
-Where game="730" defines Steam appId of a particular game (730 is CS:GO). You can look up game IDs in the store by checking the URL of their store pages.
+```
+Where *game="730"* defines Steam appId of a particular game (730 is CS:GO). You can look up game IDs in the store by checking the URL of their store pages.
 Name should specify the name of the item with correct amount of spaces, preserving all the special symbols and casing. You can copy-paste the name from Steam Market listing to make sure you don't miss anything.
 
 Full specification of the shortcode is as follows:
+```php
 [steam_market_excerpt game="" name="" displayname="" currency="1" showimage="true" imgwidth="240" imgheight="240"]
-
-Game and Name are required and must always be present.
-Displayname can be altered to change the displayed name of the item, without affecting it's reference to the actual item.
-Currency defines the currency for lowest price and median price fields. They are assigned using their unique IDs. ID=1 belongs to US dollars, which is default.
-Showimage defines whether the item image should be downloaded. If set to false, it can save up considerable amount of bandwith. It will also not generate the respective <div> fragment for the image if set to false.
-Imgwidth and Imgheight defines the maximum image dimensions that will be queried from the Steam servers. Has no effect if Showimage is set to false. Reducing the values can potentially reduce bandwith.
+```
+- Game and Name are required and must always be present.
+- DisplayName can be altered to change the displayed name of the item, without affecting it's reference to the actual item.
+- Currency defines the currency for lowest price and median price fields. They are assigned using their unique IDs. ID=1 belongs to US dollars, which is default.
+- Showimage defines whether the item image should be downloaded. If set to false, it can save up considerable amount of bandwith. It will also not generate the respective <div> fragment for the image if set to false.
+- ImgWidth and ImgHeight defines the maximum image dimensions that will be queried from the Steam servers. Has no effect if Showimage is set to false. Reducing the values can potentially reduce bandwith.
 
 **Styling**
 
