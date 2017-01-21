@@ -9,7 +9,9 @@ This plugin is utilized via a special shortcode - [steam_market_excerpt]
 **Installation**
 
 Go to Wordpress Dashboard -> Plugins -> Add New. Press Upload Plugin and navigate to the .zip file of the plugin.
+
 --or--
+
 Copy the contents of the .zip file to /your_wp_blog_ftp_location/wp-content/plugins/
 
 **Usage**
