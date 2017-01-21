@@ -4,7 +4,7 @@ Steam Market Excerpt
 **Description**
 
 Steam Market Excerpt (SME) plugin is used to add Steam Market item listings to your Wordpress posts. It shows and automatically updates the item's name, image, lowest listed price, median price and total number of listings for the given item.
-This plugin is utilized via a special shortcode - [steam_market_excerpt]
+This plugin is utilized via a special shortcode - **[steam_market_excerpt]**
 
 **Installation**
 
@@ -32,7 +32,7 @@ Full specification of the shortcode is as follows:
 - Game and Name are required and must always be present.
 - DisplayName can be altered to change the displayed name of the item, without affecting it's reference to the actual item.
 - Currency defines the currency for lowest price and median price fields. They are assigned using their unique IDs. ID=1 belongs to US dollars, which is default.
-- Showimage defines whether the item image should be downloaded. If set to false, it can save up considerable amount of bandwith. It will also not generate the respective <div> fragment for the image if set to false.
+- ShowImage defines whether the item image should be downloaded. If set to false, it can save up considerable amount of bandwith. It will also not generate the respective <div> fragment for the image if set to false.
 - ImgWidth and ImgHeight defines the maximum image dimensions that will be queried from the Steam servers. Has no effect if Showimage is set to false. Reducing the values can potentially reduce bandwith.
 
 **Styling**
