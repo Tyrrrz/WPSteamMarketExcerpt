@@ -6,8 +6,8 @@ Description: This plugin is used to make excerpts of Steam Market item listings
 Version:     1.3.1
 Author:      Alexey Golub
 Author URI:  http://www.tyrrrz.me
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License:     LGPL3
+License URI: https://www.gnu.org/licenses/lgpl-3.0.en.html
 */
 
 // Abspath
