@@ -16,7 +16,7 @@ defined('ABSPATH') or die('RIP skins');
 // Disable warnings
 error_reporting(E_ERROR);
 
-function get_page_html($url) {
+function get_content($url) {
 	$cache_dir = plugin_dir_path(__FILE__).'cache/';
 	$cache_time = 10*60; // 10 minutes
 
@@ -55,7 +55,7 @@ function get_info($game, $name, $currency) {
 		'?appid='.$game.
 		'&currency='.$currency.
 		'&market_hash_name='.rawurlencode($name);
-	$response = get_page_html($url);
+	$response = get_content($url);
 	$jobject = json_decode($response);
 	if (!isset($jobject) or !$jobject->success) return null;
 	return $jobject;
@@ -67,7 +67,7 @@ function get_image($game, $name, $width, $height) {
 		.$game.'/'
 		.rawurlencode($name).
 		'/render?start=0&count=1&currency=1&format=json';
-	$response = get_page_html($url);
+	$response = get_content($url);
 	$jobject = json_decode($response);
 	if (!isset($jobject)) return null;
 
