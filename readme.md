@@ -1,11 +1,10 @@
-# Steam Market Excerpt
+# WPSteamMarketExcerpt
 
-Steam Market Excerpt (SME) plugin is used to add Steam Market item listings to your Wordpress posts. It shows the name, image, lowest listed price, median price and total number of listings for the given item.
-This plugin is utilized in posts and pages via a shortcode - **[steam_market_excerpt]**
+WPSteamMarketExcerpt is a plugin used to add Steam Market item listings to WordPress pages. It displays the name, image, lowest listed price, median price and total number of listings for any given item. The plugin is utilized in posts and pages using its shortcode.
 
 ## Screenshots
 
-![](http://tyrrrz.me/projects/images/wpsme_1.png)
+![](http://www.tyrrrz.me/Projects/WPSteamMarketExcerpt/Images/1.png)
 
 ## Installation
 
