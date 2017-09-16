@@ -6,17 +6,22 @@ WPSteamMarketExcerpt is a plugin used to add Steam Market item listings to WordP
 
 ![](http://www.tyrrrz.me/Projects/WPSteamMarketExcerpt/Images/1.png)
 
-## Installation
+## Install
 
-Go to Wordpress Dashboard >> Plugins >> Add New. Press Upload Plugin and navigate to the .zip file of the plugin.
+1. [Download the repository as a zip file](https://github.com/Tyrrrz/WPSteamMarketExcerpt/archive/master.zip)
+2. Go to WordPress admin dashboard, navigate to Plugins, click Add New, click Upload Plugin, locate and select the zip file you just downloaded
 
---or--
+## Features
 
-Copy the contents of the .zip file to `/your_wp_blog_ftp_location/wp-content/plugins/`.
+- Retrieves up-to-date pricing information
+- Resolves and pulls item images
+- Caches data to prevent rate limiting
+- Easily customizable via CSS
 
 ## Usage
 
 The minimal required shortcode format looks like this:
+
 ```php
 [steam_market_excerpt game="730" name="AK-47 | Elite Build (Factory New)"]
 ```
@@ -24,9 +29,11 @@ Where `game="730"` defines Steam application ID of a particular game (730 is for
 The name parameter should specify the full name of the item with correct amount of spaces, preserving all the special symbols and casing. You can copy-paste the name from Steam Market listing to make sure you don't miss anything.
 
 Full specification of the shortcode is as follows:
+
 ```php
 [steam_market_excerpt game="" name="" displayname="" currency="1" showimage="true" imgwidth="240" imgheight="240"]
 ```
+
 - `Game` and `Name` parameters are required and must always be present.
 - `DisplayName` can be altered to change the displayed name of the item, without affecting its reference to the actual item.
 - `Currency` defines the currency for lowest price and median price fields. They are assigned using their unique IDs. ID=1 belongs to US dollars, which is default.
