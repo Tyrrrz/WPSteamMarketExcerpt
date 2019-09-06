@@ -4,7 +4,7 @@ WPSteamMarketExcerpt is a plugin used to add Steam Market item listings to WordP
 
 ## Screenshots
 
-![](http://www.tyrrrz.me/Projects/WPSteamMarketExcerpt/Images/1.png)
+![sample](.screenshots/sample.png)
 
 ## Install
 
